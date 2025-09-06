@@ -50,4 +50,4 @@ python demo.py
 --data_dir ./dataset/Benchmark/Set5
 --weights ./experiment/model_x3.pth
 --output ./results/set5_x3
-change the parser.add_argument and run remember estabolish the config model for the model
+change the parser.add_argument function and  remember establishing the configmodel(as you can see in the model file) for the model
