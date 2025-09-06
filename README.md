@@ -32,16 +32,17 @@ GMMSA: Global Multi-Scale Self-Attention.
 Includes REB (Residual Enhanced Block) with deformable convolutions.
 Tail:
 
-PixelShuffle for upsampling.
-Pipeline:
+
 
 🚀 Training
 Prepare your dataset in the following format:
 dataset/
-├── Benchmark/ # test/validation sets
-├── DIV2K/
-├── HR/
-├── LR_bicubic/
+├── Benchmark/ # test/validation ex:Set5、Set14
+    ├── HR/
+    ├── LR_bicubic/
+├── DIV2K/ #train datset
+    ├── HR/
+    ├── LR_bicubic/
 Run training:
 Ex:
 python train.py --config ./configs/X3.yaml
@@ -49,3 +50,4 @@ python demo.py
 --data_dir ./dataset/Benchmark/Set5
 --weights ./experiment/model_x3.pth
 --output ./results/set5_x3
+change the parser.add_argument and run remember estabolish the config model for the model
